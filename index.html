@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formularios</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      function enviar(e) {
+        e.preventDefault();
+        console.log("Chau");
+      }
+    </script>
+  </head>
+  <body>
+    <main>
+      <h1 style="padding: 10px; border: 1px solid black">Formulario</h1>
+      <form id="formulario" onsubmit="enviar(event)">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" required />
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required />
+
+        <label for="pass">Contrasenha</label>
+        <input type="password" name="pass" id="pass" required />
+
+        <!-- Agregar input para seleccionar 3 opciones de transporte (Bus, Tren,
+        Bicicleta) -->
+        <!--
+        <label for="transporte">Seleccionar transporte</label>
+        <select id="transporte" name="transporte" multiple>
+          <option value="bus">Bus</option>
+          <option value="tren">Tren</option>
+          <option value="Bicicleta">Bicicleta</option>
+        </select>
+
+        Agregar input de selección múltiple
+        <fieldset>
+          <h2>Seleccionar transporte</h2>
+          <input type="checkbox" name="bus" id="bus" value="bus" />
+          <label for="bus">Bus</label>
+          <input type="checkbox" name="tren" id="tren" value="bus" />
+          <label for="tren">Tren</label>
+          <input type="checkbox" name="bicicleta" id="bicicleta" value="bus" />
+          <label for="bicicleta">Bicicleta</label>
+        </fieldset>
+        -->
+
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+  </body>
+</html>
